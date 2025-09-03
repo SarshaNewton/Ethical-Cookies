@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modal for managing cookie consent preferences">
+    <title>Ethical Cookies Modal</title>
+    <meta name="keywords" content="cookies, consent, modal">
+    <meta name="author" content="Sarsha Newton">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Jomhuria&display=swap" rel="stylesheet">
+<body>
+    <div id="cookie-modal">
+        <div id="cookie-content">
+             <!--Landing Page Modal-->
+            <div id="cookie-landing">
+                <img src="Assets/cookie.png" alt="cookie"/>
+                <h1>We Bake Cookies!</h1>
+                <p>We use cookies to remember your preferences, understand how our site is used and to tailor and measure ads </p>
+
+                <div id="modal-buttons">
+                    <button class="accept-cookies">Accept All Cookies</button>
+                    <button class="reject-cookies">Reject All Optional Cookies</button>
+                </div>
+            </div>
+
+            <!--Custom Cookies-->
+            <div id="cookie-customize">
+                <div id="cookie-toppings">
+                    <img id="base-cookie" src="Assets/base-cookie.png" alt="No Cookies Cookie">
+                    <img id="drizzle" class="topping" src="Assets/drizzle.png" alt="No Cookies Cookie">
+                    <img id="sprinkles" class="topping" src="Assets/sprinkles.png" alt="No Cookies Cookie">
+                    <img id="marshmallows" class="topping" src="Assets/marshmallows.png" alt="No Cookies Cookie">
+                    <img id="nuts" class="topping" src="Assets/nuts.png" alt="No Cookies Cookie">
+                </div>
+
+                <h1>Customize Your Cookies!</h1>
+                
+                <div id="select-box">
+                    <div class="cookie-select">
+                        <div class="cookie-control">
+                            <img class="chevron" src="Assets/chevron-down.svg" alt="more"/>
+                            <div class="cookie-desc">
+                                <h3>Necessary</h3>
+                                <p>These cookies are essential for our website to function correctly.</p>
+                            </div>
+                            <p class="always-active">Always Active</p>
+                        </div>
+                        
+                        <div class="cookie-info" hidden>
+                            <dl class="cookie-info-item">
+                                <dt>Cookie</dt>
+                                <dd>sarsha-cookie</dd>
+
+                                <dt>Duration</dt>
+                                <dd>Indefinite</dd>
+
+                                <dt>Description</dt>
+                                <dd>This cookie builds out of this world experiences</dd>
+                            </dl>
+
+                            <dl class="cookie-info-item">
+                                <dt>Cookie</dt>
+                                <dd>bad-ux</dd>
+
+                                <dt>Duration</dt>
+                                <dd>Session</dd>
+
+                                <dt>Description</dt>
+                                <dd>This cookie looks for bad UX designs and fixes them</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="cookie-select">
+                        <div class="cookie-control" aria-expanded="false">
+                            <img class="chevron" src="Assets/chevron-down.svg" alt="more"/>
+                            <div class="cookie-desc">
+                                <h3>Analytics</h3>
+                                <p>These cookies collect information about how you use our website, such as which pages you visit most often. This data is anonymous and only used to improve how our site works.</p>
+                            </div>
+                            <label class="switch" id="cookie-analytics">
+                                <input type="checkbox" aria-label="Enable Analytics">
+                                <span class="track"></span>
+                                <span class="thumb"></span>
+                            </label>
+                        </div>
+                        <div class="cookie-info" hidden>
+                            <dl class="cookie-info-item">
+                                <dt>No Cookie Information Available</dt>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="cookie-select">
+                        <div class = "cookie-control">
+                            <img class="chevron" src="Assets/chevron-down.svg" alt="more"/>
+                            <div class="cookie-desc">
+                                <h3>Preferences</h3>
+                                <p>These cookies allow us to remember choices you make, such as your language and region.</p>
+                            </div>
+                            <label class="switch" id="cookie-preferences">
+                                <input type="checkbox" aria-label="Enable Preferences">
+                                <span class="track"></span>
+                                <span class="thumb"></span>
+                            </label>
+                        </div>
+                        <div class="cookie-info" hidden>
+                            <dl class="cookie-info-item">
+                                <dt>No Cookie Information Available</dt>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="cookie-select">
+                        <div class = "cookie-control">
+                            <img class="chevron" src="Assets/chevron-down.svg" alt="more"/>
+                            <div class="cookie-desc">
+                                <h3>Marketing</h3>
+                                <p>These cookies are used to deliver advertising that is more relevant to you and your interests. They may also be used to limit the number of times you see an ad and to measure the effectiveness of advertising campaigns.</p>
+                            </div>
+                            <label class="switch" id="cookie-marketing">
+                                <input type="checkbox" aria-label="Enable Marketing">
+                                <span class="track"></span>
+                                <span class="thumb"></span>
+                            </label>
+                        </div>
+                        <div class="cookie-info" hidden>
+                           <dl class="cookie-info-item">
+                                <dt>No Cookie Information Available</dt>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <div class="cookie-select">
+                        <div class = "cookie-control">
+                            <img class="chevron" src="Assets/chevron-down.svg" alt="more"/>
+                            <div class="cookie-desc">
+                                <h3>Performance</h3>
+                                <p>These cookies help us to provide enhanced functionality and improved speed. They may be used to support features such as video playback, caching, or load balancing, ensuring that the site runs smoothly.</p>
+                            </div>
+                            <label class="switch" id="cookie-performance">
+                                <input type="checkbox" aria-label="Enable Performance">
+                                <span class="track"></span>
+                                <span class="thumb"></span>
+                            </label>
+                        </div>
+                        <div class="cookie-info" hidden>
+                            <dl class="cookie-info-item">
+                                <dt>No Cookie Information Available</dt>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="customize-buttons">
+                    <button class="reject-cookies">Reject All Optional Cookies</button>
+                    <button class="confirm-cookies">Confirm Cookie Selection</button>
+                    <button class="accept-cookies">Accept All Cookies</button>
+                </div>
+            </div>
+        </div>  
+       
+        <div id="cookie-footer">
+            <a href="#" id="cookie-policy">Cookies Policy</a>
+            <a id="customize-link" href="#">Customize Cookies</a>
+        </div>
+    </div>
+
+    <!-- The Website -->
+    <div id="content">
+        <h1>You Selected Cookies!</h1>
+        <div id="cookie-management">
+            <button id="cookie-settings-link" href="#">Open Cookie settings</button>
+            <button id="reset-cookie-settings" href="#">Reset Cookie settings</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
